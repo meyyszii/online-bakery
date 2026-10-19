@@ -1,8 +1,8 @@
 :root {
-  /* galeri atas */
+  /* foto homepage */
   --img-gallery-bread: url("./bread(2).jpg");
 
-  /* kartu kategori */
+  /* foto menu */
   --img-bread:    url("bread(2).jpg");
   --img-cookies:  url("fresh cookies.jpg");
   --img-pastries: url("fresh pastery.jpg");
@@ -43,7 +43,7 @@ body {
   background: #fff;
 }
 
-/* ===== Header ===== */
+
 h1 {
   font-size: 2rem;
   font-weight: 700;
@@ -93,7 +93,7 @@ nav a:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* ===== Kategori (Breads, Cookies, Pastries) ===== */
+/*  (Breads, Cookies, Pastries) */
 .categories {
   display: flex;
   align-items: flex-start;
@@ -115,7 +115,6 @@ nav a:hover {
   background-position: center;
 }
 
-/* lapisan gelap tipis supaya tulisan putih terbaca */
 .card::before {
   content: "";
   position: absolute;
@@ -135,7 +134,7 @@ nav a:hover {
 .card-cookies  { background-image: var(--img-cookies); }
 .card-pastries { background-image: var(--img-pastries); }
 
-/* ===== Galeri ===== */
+/*foto */
 .gallery {
   display: flex;
   gap: 10px;
@@ -153,7 +152,7 @@ nav a:hover {
 .gallery .bread     { background-image: var(--img-gallery-bread); }
 .gallery .croissant { background-image: var(--img-croissant); }
 
-/* ===== Menu: Breads ===== */
+/*  Menu: Breads  */
 .menu-section {
   margin-top: 30px;
   scroll-margin-top: 60px;
@@ -183,7 +182,7 @@ nav a:hover {
 }
 
 .menu-head p {
-  margin-top: 8px;          /* tagline sedikit turun dari judul */
+  margin-top: 8px;         
   max-width: 55%;
   text-align: right;
   font-size: 1.6rem;
@@ -205,7 +204,7 @@ nav a:hover {
 }
 
 .item-img {
-  flex: 0 0 150px;          /* ukuran foto menu seragam: 150 x 120 */
+  flex: 0 0 150px;          
   height: 120px;
   background-color: #8a5a2b;
   background-size: cover;
@@ -240,13 +239,13 @@ nav a:hover {
 .img-pain-au-chocolate { background-image: var(--img-pain-au-chocolate); }
 .img-cinnamon-swirl { background-image: var(--img-cinnamon-swirl); }
 
-/* posisi bagian foto yang ditampilkan (supaya rotinya tidak terpotong) */
+
 .img-baguette    { background-position: center 28%; }
 .img-brioche     { background-position: center 45%; }
 .img-choco-fudge { background-position: center 55%; }
 .img-oatmeal     { background-position: center 45%; }
 
-/* ===== Order ===== */
+/*  Order  */
 .order-section {
   display: grid;
   grid-template-columns: 1.2fr 0.9fr;
@@ -362,7 +361,7 @@ nav a:hover {
   cursor: pointer;
 }
 
-/* ===== Footer ===== */
+/* bagian footer */
 footer {
   margin-top: 30px;
   color: #111;
@@ -410,7 +409,7 @@ footer {
   text-align: center;
 }
 
-/* ===== Tampilan HP ===== */
+/* tampilan di hp */
 @media (max-width: 600px) {
   .categories,
   .gallery {
@@ -418,12 +417,12 @@ footer {
   }
 
   .categories {
-    align-items: stretch;   /* kartu selebar layar saat bertumpuk */
+    align-items: stretch;   
   }
 
   .card,
   .gallery div {
-    flex: none;       /* supaya tinggi 215px tetap berlaku saat bertumpuk */
+    flex: none;       
   }
 
   .menu-list {
